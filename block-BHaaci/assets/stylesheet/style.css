@@ -1,0 +1,218 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/************CUstom Code***********/
+
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+body{
+    
+    font-family: 'Roboto', sans-serif;
+    color:#f5fffe;
+    line-height: 1.2;
+}
+
+.container{
+    max-width:1100px;
+    margin:0 auto;
+}
+
+.flex{
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+
+.justify-content{
+    
+    justify-content: space-between;
+}
+
+.align-items{
+    align-items: center;
+}
+.flex-start{
+    
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.flex-center{
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-wrap {    
+    flex-wrap: wrap;
+}
+
+.flex40{
+    flex: 0 1 40%;
+    border:1px solid black;
+}
+.flex48{
+    flex:0 1 48%;
+}
+/***********Hero Section************/
+
+.hero{
+    
+    
+    background: linear-gradient(to right, rgba(226, 3, 3, 0.5), rgba(248, 2, 2, 0.5)), url('../bg-intro-desktop.png');
+    height:100vh;
+    background-position: center;
+    background-size: cover;   
+    display:flex;
+    align-items: center;
+    
+}
+
+.intro h1{
+    font-size: 58px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.intro p{
+    font-size:18px;
+    padding:5px 0;
+    font-weight: 700;
+
+}
+.intro{
+   margin-top:180px;   
+}
+.btn{
+    background-color:#5d54a3 ;
+    width:100%;
+    height:60px;
+    border-radius: 10px;
+    color:#f5fffe;
+    font-size:20px;
+    border:none;
+    /* box-shadow: 0 10px 10px -2px rgba(7, 7, 7, 0.4); */
+    box-shadow: 0 8px 0 rgba(0,0,0,0.2);
+    
+}
+
+.btn strong{
+    
+    font-weight:700;
+}
+
+
+
+
+
+.form2{
+    background-color: #f5fffe;
+    margin-top:20px;
+    padding:40px 20px ;
+    border-radius: 15px;
+}
+
+.form-style{
+
+    width:90%;
+    margin-left:24px;
+    padding:20px 0;
+    margin-bottom: 15px;
+    color:#919193;
+    font-size:16px;
+    font-weight: 700;
+    padding-left:20px;
+    border-radius: 5px;
+    
+    border:1px solid rgb(201, 199, 199);
+}
+
+.border{
+
+    border:1px solid black;
+}
+
+.btn2{
+    background-color:#37cc8a ;
+    width:90%;
+    height:60px;
+    border-radius: 10px;
+    color:#f5fffe;
+    font-size:20px;
+    border:none;
+    /* box-shadow: 0 3px 3px -2px rgba(7, 7, 7, 0.8);  */
+    border-bottom: 4px solid rgba(0,0,0,0.2);
+    margin-left:24px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.btn2 span{
+    font-size:16px;
+    font-weight: 600;
+}
+
+.small span{
+    font-size: 12px;
+    color:#e09190;
+    font-weight: 600;
+    padding-left:5px;
+}
+
+.form2 small{
+    font-size: 12px;
+    color:#c5c5c7;
+    font-weight: 600;
+     margin-left:60px; 
+     padding:10px;
+    
+}
