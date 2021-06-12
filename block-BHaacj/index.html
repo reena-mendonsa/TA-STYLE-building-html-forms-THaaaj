@@ -1,0 +1,313 @@
+<!--- Create a page according to the layout shown below.
+
+![Building HTML forms Assignment level 2](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/building-html-forms/ex-2.png)
+
+- Using CSS resets is necessary.
+
+- Use semantic tags and keep the nesting and indentation proper.-->
+
+
+<!DOCTYPE  html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Html Form Assignment2</title>
+        <!--CSS-->
+        <link rel="stylesheet" href ="assets/stylesheet/style.css">
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <!--Font Awesome Icons-->
+        <script src="https://kit.fontawesome.com/471db95236.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!----Header------>
+        <header class="header">
+            <div class="container flex">
+                <div class="brand">
+                <a href="index.html" class="brand-logo"> <img src="assets/logo.png" alt="brand logo">Journey </a>
+                </div>
+                <nav class="nav-links">
+                    <ul class="header-menu justify-content">
+                        <li class="homeColor"><a href="#">Home</a></li>
+                        <li><a href="#">Top Destinations</a></li>
+                        <li><a href="#">Recommended Places</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+        <main>
+            <!--Hero section-->
+            <section class="container hero ">
+              <div>
+                <div class="hero-heading ">
+                    <h1>Let's Begin</h1>
+                    <ul class="dots">
+                        <li></li>
+                        <li class="mid-dot"></li>
+                        <li></li>
+                    </ul>
+                    <h4>We assist you to choose the best.</h4>
+                    <div class="down-arrow  flex flex-center"><i class="fas fa-angle-down"></i></div>
+                </div>
+                <form class="form justify-content">
+                    
+                       <fieldset class="info flex48">
+
+                        <label for="dest">Choose your Destination</label>
+                        <input type="text" class="form-ctrl" name="destination" id="dest" placeholder="Type your destination..." required>
+                        <div class="justify-content">
+                            <div >
+                            <label for="check-in">Check In Date</label>
+                            <input type="text" class="form-ctrl" name="checkIn" id="check-in" placeholder="Check In" required>
+                            </div>
+                            <div>
+                                 <label for="Check-out">Check Out Date</label>
+                                 <input type="text" class="form-ctrl" name="checkOut" id="check-out" placeholder="Check Out" required>
+                            </div>
+                        </div>
+                       </fieldset >
+                       <fieldset class=" info flex48">
+                        <div class="justify-content"> 
+                            <div>      
+                                <label for="room">How many Rooms?</label>
+                                <input type="text" class="room form-ctrl" name="rooms" id="room" placeholder="1 Room" required>
+                            </div>
+                            <div>
+                                <label for="adult">Adult</label>
+                                <select name="adult" class="sel-ctrl"  id="adult">
+                                    <option value="1" selected>1</option>
+                                    <option value="2" >2</option>
+                                    <option value="3" >3</option>
+                                    <option value="4" >4</option>
+                                    <option value="5" >5</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="child">Children</label>
+                                <select name="child" class="sel-ctrl" id="children">
+                                    <option value="1" selected>1</option>
+                                    <option value="2" >2</option>
+                                    <option value="3" >3</option>
+                           
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                           <input class="btnColor1 btn-form" type="submit" name="submit" value="Check Availability"> 
+                         </div>
+                       </fieldset>
+                    
+                </form>
+             </div>  
+            </section>
+            <!--Section2 article-->
+            <section class="section2 container">
+                <article class="sec2-article">
+                    <h2>
+                        Your <strong>Journey</strong> is Our Prioority
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <a href="#" class="btnColor1 btn-other">Continue Explore</a>
+                </article>
+
+            </section>
+            <!--Section3 image desc-->
+            <section class="container justify-content">
+                <div class="flex50 pics">
+                  <img class= "place-image" src="./assets/tm-img-01.jpg" alt="mountains">
+                </div>
+                <div class="flex48 ">
+                    <article class="descBox desc1 desc">
+                        <h3>Europe's most visited places</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsam tenetur ullam totam, deserunt at quibusdam quo commodi dolorem dolores quas facilis vel nihil esse similique eius libero autem repudiandae.</p>
+                        <a href="#" class="btnColor2 btn-other">Continue Reading</a>
+                        <div class="side-arrow left-arrow"><i class="fas fa-chevron-circle-left"></i></div>
+                        <div class="side-arrow rt-arrow"><i class="fas fa-chevron-circle-right"></i></div>
+                    </article>
+                </div>
+            </section>
+
+             <!--Section4 image desc-->
+             <section class="container justify-content">
+               
+                <div class="flex48 ">
+                    <article class="descBox desc2 desc">
+                        <div class="side-arrow left-arrow2"><i class="fas fa-chevron-circle-left"></i></div>
+                        <div class="side-arrow rt-arrow2"><i class="fas fa-chevron-circle-right"></i></div>
+                        <h3>Asia's most popular places</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsam tenetur ullam totam, deserunt at quibusdam quo commodi dolorem dolores quas facilis vel nihil esse similique eius libero autem repudiandae.</p>
+                        <a href="#" class="btnColor3 btn-other">Continue Reading</a>
+                       
+                    </article>
+                </div>
+                <div class="flex50 pics">
+                    <img class="place-image2" src="./assets/tm-img-02.jpg" alt="sea resort">
+                  </div>
+            </section>
+
+            <!--Section5 image desc-->
+            <section class="container justify-content">
+                    <div class="flex50 pics">
+                      <img class= "place-image" src="./assets/tm-img-03.jpg" alt="market">
+                    </div>
+                    <div class="flex48 ">
+                        <article class="descBox desc1 desc">
+                            <h3>America's most famous places</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsam tenetur ullam totam, deserunt at quibusdam quo commodi dolorem dolores quas facilis vel nihil esse similique eius libero autem repudiandae.</p>
+                            <a href="#" class="btnColor2 btn-other">Continue Reading</a>
+                            <div class="side-arrow left-arrow"><i class="fas fa-chevron-circle-left"></i></div>
+                            <div class="side-arrow rt-arrow"><i class="fas fa-chevron-circle-right"></i></div>
+                        </article>
+                    </div>
+            </section>
+            
+            <!--Section6 Maps-->
+            <section>
+                <div class="container cont-maps flex flex-wrap">
+                    <div class="felx14 continent">
+                        <img src="assets/north-america.png" alt="north america"> 
+                         <h5>North America</h5> 
+                    </div>
+                    <div class="felx14 continent">
+                        <img src="assets/south-america.png" alt="south america">  
+                        <h5>South America</h5>
+                    </div>
+                    <div class="felx14 continent">
+                        <img src="assets/europe.png" alt="europe">  
+                        <h5>Europe</h5>
+                    </div>
+                    <div class="felx14 continent">
+                        <img src="assets/asia.png" alt="asia"> 
+                        <h5>Asia</h5> 
+                    </div>
+                    <div class="felx14 continent">
+                        <img src="assets/africa.png" alt="africa">  
+                        <h5>Africa</h5>
+                    </div>
+                    <div class="felx14 continent">
+                        <img src="assets/australia.png" alt="australia">  
+                        <h5>Australia</h5>
+                    </div>
+                    <div class="felx14 continent">
+                        <img src="assets/antartica.png" alt="antartica">  
+                        <h5>Antartica</h5>
+                    </div>
+                </div>
+            </section>
+            <!---Section7 Hotels-->
+            <section class="container sec7">
+
+             <div class="container2 justify-content resort">
+                 <div class="flex20 ">
+                    <img src="assets/tm-img-06.jpg" class="resort-img" alt="hotels asia">
+                 </div>
+                 <div class="flex60  resort-text">
+                    <h6>ASIA Hotel Resort</h6>
+                    <span>Singapore</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos recusandae dicta dolorem rerum.</p>
+                 </div>
+                 <div class="flex20 resort-price flex flex-center" >
+                     <div>
+                        <img class="curve" src="assets/button-curve.png">
+                    </div>
+                     <div>
+                       <p>$440</p>
+                       <a href="#" class="more">Continue Reading </a>
+                    </div>
+                 </div>
+             </div>
+             <!--2-->
+             <div class="container2 justify-content resort">
+                <div class="flex20 ">
+                   <img src="assets/tm-img-07.jpg" class="resort-img" alt="hotels nullam">
+                </div>
+                <div class="flex60  resort-text">
+                   <h6>Nullam Eget est A nisl</h6>
+                   <span>Yangon,Myanmar</span>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos recusandae dicta dolorem rerum.</p>
+                </div>
+                <div class="flex20 resort-price flex flex-center" >
+                    <div>
+                       <img class="curve" src="assets/button-curve.png">
+                   </div>
+                    <div>
+                      <p>$450</p>
+                      <a href="#" class="more">Continue Reading </a>
+                   </div>
+                </div>
+            </div>
+            <!---3-->
+            <div class="container2 justify-content resort">
+                <div class="flex20 ">
+                   <img src="assets/tm-img-05.jpg" class="resort-img" alt="hotels thailand">
+                </div>
+                <div class="flex60  resort-text">
+                   <h6>Proin interdum ullamcorper</h6>
+                   <span>Bangkok,Thailand</span>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos recusandae dicta dolorem rerum.</p>
+                </div>
+                <div class="flex20 resort-price flex flex-center" >
+                    <div>
+                       <img class="curve" src="assets/button-curve.png">
+                   </div>
+                    <div>
+                      <p>$460</p>
+                      <a href="#" class="more">Continue Reading </a>
+                   </div>
+                </div>
+            </div>
+
+            <!---4--->
+            <div class="container2 justify-content resort">
+                <div class="flex20 ">
+                   <img src="assets/tm-img-04.jpg" class="resort-img" alt="hotels vietnam">
+                </div>
+                <div class="flex60  resort-text">
+                   <h6>lorem ipsum dolor sit</h6>
+                   <span>Vientiane, Laos</span>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos recusandae dicta dolorem rerum.</p>
+                </div>
+                <div class="flex20 resort-price flex flex-center" >
+                    <div>
+                       <img class="curve" src="assets/button-curve.png">
+                   </div>
+                    <div>
+                      <p>$470</p>
+                      <a href="#" class="more">Continue Reading </a>
+                   </div>
+                </div>
+            </div>
+            <div class="container2 show-more">
+                <a href="#" class="btnColor1 btn-other">SHOW MORE PLACES</a>
+            </div>
+            </section>
+            <!--MAP-->
+            <section>
+                <div class="container gmap">
+                  <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15559.880406463215!2d77.64215715!3d12.8452076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1623074974127!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  <form class="form2">
+                          <div class="justify-content">
+                          <input class="text-box" type="text" name="name" placeholder="Name" required>
+                          <input class="text-box" type="email" name="email" placeholder="Email" required>
+                        </div>
+                          <input class="text-box2" type="text" name="subject" placeholder="Subject" required><br>
+                          <textarea class="text-area" name="message" rows="10" cols="40">Message</textarea>
+                          <input type="button" name="submit" value="Send Message Now" class="btnColor1 btn-form btn-margin ">
+                      
+                  </form>
+                </div>
+            </section>
+
+            <!--Footer-->
+            <footer class="container footer"> 
+                <div class="copyrt">
+                    <small>Copyright &copy; 2020 Your Company.Designed by Template Mo</small>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>
+
